@@ -1,0 +1,50 @@
+{
+  "name": "dsh-chat-recast",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Recast a question or retry an answer: fork the conversation up to that message, ask again with your corrected text, archive the original chat, and keep the title.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "chat",
+    "fork",
+    "regenerate"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaohou716/dsh-chat-recast.git"
+  },
+  "homepage": "https://github.com/xiaohou716/dsh-chat-recast#readme",
+  "bugs": {
+    "url": "https://github.com/xiaohou716/dsh-chat-recast/issues"
+  }
+}
