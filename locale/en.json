@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Chat recast",
+    "description": "Adds two actions to every finished answer: recast and edit. Each one forks the conversation up to your question, asks again with the corrected text, archives the original chat, and keeps its title. Open any session and use the actions under an answer. Nothing is rewritten in place: the old chat is archived, not deleted from disk, and the new fork keeps the parent link."
+  }
+}
